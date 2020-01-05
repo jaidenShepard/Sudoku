@@ -130,9 +130,3 @@ class Sudoku:
 
     def get_solved(self) -> List[int]:
         return [cell.value or 0 for cell in self.cells]
-
-
-sudoku = Sudoku()
-sudoku.initialize_game()
-grid = sudoku.get_grid(Difficulty.EASY)
-print(grid)
